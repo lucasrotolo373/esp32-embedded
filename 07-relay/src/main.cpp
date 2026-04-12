@@ -22,7 +22,7 @@ void loop() {
       Serial.println(" -> ¡Relay ACTIVADO!");
     } else if(valorPot < 1900){
         digitalWrite(PIN_RELAY, LOW);  
-    }
+    } 
     last = millis();
   }
 }

@@ -9,20 +9,14 @@ using non-blocking timing with millis().
 ## Hardware
 - ESP32 NodeMCU 38-pin (CP2102)
 - DHT11 temperature and humidity sensor
-- 10kΩ pull-up resistor between VCC and DATA
 
 ## Wiring
 | DHT11 | ESP32 |
 |-------|-------|
+| DATA  | GPIO27|
 | VCC   | 3.3V  |
-| DATA  | GPIO4 |
 | GND   | GND   |
 
-## Known issue
-Sensor returns NaN readings — likely damaged due to incorrect wiring
-during initial setup (pins connected in wrong order). The code is
-correct and has been verified. A replacement DHT11 is needed to
-confirm full functionality.
 
 ## How to flash
 1. Install PlatformIO in VS Code

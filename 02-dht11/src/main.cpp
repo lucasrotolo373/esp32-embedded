@@ -1,7 +1,7 @@
 #include <Arduino.h>
 #include <DHT.h>
 
-#define DATA_PIN 33
+#define DATA_PIN 27
 #define DHT_TYPE DHT11
 
 uint64_t last = 0;
